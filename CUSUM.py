@@ -13,7 +13,7 @@ class CUSUM:
 
     def update(self, sample):
         self.t += 1
-        if self.t <= self.M
+        if self.t <= self.M:
             self.reference += sample/self.M
             return 0
         else:
